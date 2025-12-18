@@ -6,11 +6,11 @@
 
 ## 论文信息
 
-**论文标题**：Emotion across modalities and cultures: Multilingual multimodal emotion-cause analysis with memory-inspired framework  
-**作者**：Dan Wu, Xincheng Ju, Dong Zhang, Shoushan Li, Erik Cambria, Guodong Zhou  
-**会议**：Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM 2025)  
-**页码**：5775–5783  
-**DOI（正式出版版本）**：https://doi.org/10.1145/3746027.3755655
+- **标题**：Emotion across modalities and cultures: Multilingual multimodal emotion-cause analysis with memory-inspired framework  
+- **作者**：Dan Wu, Xincheng Ju, Dong Zhang, Shoushan Li, Erik Cambria, Guodong Zhou  
+- **会议**：ACM Multimedia (MM) 2025  
+- **页码**：5775–5783  
+- **DOI**：https://doi.org/10.1145/3746027.3755655
 
 ---
 
