@@ -18,18 +18,19 @@
 
 由于数据集体积较大，本仓库不直接存放完整数据文件，请通过外部链接下载：
 
-- 数据集下载链接：<数据集下载链接>
-- （可选）备用链接：<备用下载链接>
+- 数据集下载链接：[<数据集下载链接>](https://drive.google.com/drive/folders/1biCggSJmQOmSA1dn7lGsmNqlFW3y-6Hn?usp=sharing)
 
-下载并解压后，建议按以下目录结构放置（如结构不同，请相应修改运行命令中的路径参数）：
-
-```bash
+### 数据集目录结构说明
+```text
 data/
-  train.json
-  dev.json
-  test.json
-````
-
+├── MEC4_text/           # 文本与标注数据
+│   ├── train.json       # 训练集：包含对话、情感标签及原因配对
+│   ├── valid.json       # 验证集
+│   └── test.json        # 测试集
+├── dialogue_videos/     # 视频资源
+│   └── [video_files].mp4 # 与样本对应的视频片段
+└── subtitles.json       # 时间轴数据
+    └── 包含每行台词在视频中对应的具体时间戳（Start/End Time）
 ---
 
 ## 环境安装
