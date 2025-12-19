@@ -32,6 +32,7 @@ data/
 └── subtitles.json       # 时间轴数据
     └── 包含每行台词在视频中对应的具体时间戳（Start/End Time）
 ---
+```
 
 ## 环境安装
 
