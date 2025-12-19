@@ -1,6 +1,6 @@
 # M3F-MECPE
 
-本仓库为 ACM MM 2025 论文《Emotion across modalities and cultures: Multilingual multimodal emotion-cause analysis with memory-inspired framework》的官方代码与MEC<sup>4</sup>数据集仓库。
+本仓库为 ACM MM 2025 论文《Emotion across modalities and cultures: Multilingual multimodal emotion-cause analysis with memory-inspired framework》的官方代码与数据集仓库，包含MEC<sup>4</sup>数据集和M<sup>3</sup>F框架。
 
 ---
 
