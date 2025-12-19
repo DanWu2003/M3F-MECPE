@@ -34,39 +34,6 @@ data/
 ---
 ```
 
-## 环境安装
-
-推荐 Python 3.9+。
-
-在仓库根目录执行：
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 代码运行
-
-> 说明：以下为通用运行示例，请根据仓库中实际脚本与参数名调整（通常位于 `scripts/` 目录）。
-
-### 1) 推理 / 生成预测结果
-
-```bash
-python scripts/infer.py \
-  --data_path data/test.json \
-  --output_path outputs/pred.json
-```
-
-### 2) 评测
-
-```bash
-python scripts/eval.py \
-  --pred_path outputs/pred.json \
-  --gold_path data/test.json
-```
-
----
 
 ## 引用方式
 
