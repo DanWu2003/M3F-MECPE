@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and editors
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Local model weights
+LLMs/*
+!LLMs/.gitkeep
+*.bin
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# Extracted multimodal data
+data/*/video_frames/
+data/*/audio_mfcc/
+data/*/videos/
+data/*/audio/
+*.wav
+
+# Experiment outputs and logs
+lavis/output/
+run_scripts/screen/
+outputs/
+logs/
+wandb/
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS files
+.DS_Store

@@ -1,0 +1,88 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+model:
+  arch: blip2_vicuna_instruct
+  model_type: vicuna7b
+  load_finetuned: False
+  load_pretrained: True
+
+  # vit encoder
+  image_size: 224
+  drop_path_rate: 0
+  use_grad_checkpoint: False
+  vit_precision: "fp32"
+  freeze_vit: False
+
+  # Q-Former
+  num_query_token: 32
+
+  # path to vicuna checkpoint
+  llm_model: ""
+  bert_path: ""
+  max_txt_len: 512
+  max_output_txt_len: 125
+  use_audio: True
+  use_video: True
+  use_lora: True
+  use_qlora: True
+  # generation configs
+  prompt: ""
+
+datasets:
+  msvd_caption: # name of the dataset builder
+    vis_processor:
+        train:
+          name: "blip2_video_train"
+          image_size: 224
+        eval:
+          name: "blip2_video_eval"
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+          prompt: "请输出该视频对话中的情绪原因对："
+        eval:
+          name: "blip_caption"
+          prompt: "请输出该视频对话中的情绪原因对："
+    num_frames: 10
+
+run:
+  task: captioning
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-5
+  min_lr: 0
+  warmup_lr: 1e-8
+  # warmup_steps: 1000
+  warmup_steps: 200
+  weight_decay: 0.05
+  max_epoch: 10
+  batch_size_train: 16
+  batch_size_eval: 16
+  num_workers: 12
+  accum_grad_iters: 1
+
+  max_len: 512 # 512
+  min_len: 1
+  num_beams: 5
+
+  seed: 42
+  output_dir: "output"
+
+  amp: False
+  resume_ckpt_path: null
+
+  evaluate: False
+  train_splits: ["train"]
+  valid_splits: ["val"]
+  test_splits: []
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
+  report_metric: True
+  suffix : null
