@@ -16,7 +16,7 @@
 
 由于完整数据集体积较大，本仓库不直接存放原始视频等大文件。请通过以下链接下载：
 
-- [MEC⁴ 数据集（Google Drive）](https://drive.google.com/drive/folders/1biCggSJmQOmSA1dn7lGsmNqlFW3y-6Hn?usp=sharing)
+- [MEC⁴ 数据集（Google Drive）](https://drive.google.com/file/d/1rsEo05Y8dqAXrYxotGu9EGBWudMt5U9b/view?usp=sharing)
 
 下载后的原始数据目录如下：
 

@@ -16,7 +16,7 @@ This is the official code and dataset repository for the ACM MM 2025 paper “Em
 
 The complete dataset is too large to be hosted directly in this repository. Download it from:
 
-- [MEC⁴ Dataset on Google Drive](https://drive.google.com/drive/folders/1biCggSJmQOmSA1dn7lGsmNqlFW3y-6Hn?usp=sharing)
+- [MEC⁴ Dataset on Google Drive](https://drive.google.com/file/d/1rsEo05Y8dqAXrYxotGu9EGBWudMt5U9b/view?usp=sharing)
 
 The downloaded raw dataset has the following layout:
 
